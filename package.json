@@ -7,12 +7,16 @@
   "files": [
     "src"
   ],
+  "license": "MIT",
+  "author": "Chris Page",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gidjituser/pi2c-serial"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/server.js"
   },
-  "author": "Chris Page",
-  "license": "ISC",
   "dependencies": {
     "@koa/cors": "^2.2.3",
     "debug": "^4.1.1",
