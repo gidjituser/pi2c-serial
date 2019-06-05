@@ -1,0 +1,25 @@
+{
+  "name": "pi2c-serial",
+  "version": "0.10.14",
+  "description": "websocket serial server",
+  "main": "server.js",
+  "bin": {"pi2c-serial": "./src/server.js"},
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js"
+  },
+  "author": "Chris Page",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "debug": "^4.1.1",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "node-ipc": "^9.1.1",
+    "serialport": "^7.1.5",
+    "websocket": "^1.0.28"
+  }
+}
