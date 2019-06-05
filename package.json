@@ -1,6 +1,6 @@
 {
   "name": "pi2c-serial",
-  "version": "0.10.14",
+  "version": "0.10.16",
   "description": "websocket serial server",
   "main": "server.js",
   "bin": {"pi2c-serial": "./src/server.js"},
