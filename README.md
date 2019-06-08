@@ -3,6 +3,7 @@
 - [PI2c - Serial](#pi2c---serial)
   - [Info](#info)
   - [Pin mapping](#pin-mapping)
+    - [Installing and Running](#installing-and-running)
   - [Setup](#setup)
 
 This is a complimentary repo providing the ability for serial over TCP or Websockets
@@ -44,6 +45,22 @@ respectivly.
 | UART | | |
 | UART_TX | 12 | 8 |
 | UART_RX | 14 | 10 |
+
+### Installing and Running
+
+- Install and run globally
+
+```bash
+npm install -g pi2c-serial
+REST_PORT=82 pi2c-serial
+```
+
+- Install and run in repo
+
+```bash
+npm install
+REST_PORT=82 node src/server.js
+```
 
 ## Setup
 
