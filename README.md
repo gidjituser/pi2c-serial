@@ -6,8 +6,8 @@
     - [Installing and Running](#installing-and-running)
   - [Setup](#setup)
 
-This is a complimentary repo providing the ability for serial over TCP or Websockets
-for the Raspberry PI. Basically makes the PI act as a serial over network adapter.
+This application provides the ability for serial over TCP or Websockets
+on a Raspberry PI. Basically makes the PI act as a serial over network adapter.
 Note - CTS and RTS are not supported
 
 This repo is complimentary to the PI2c repo allowing you to control the i2c, spi, pwm, and gpio
@@ -33,7 +33,6 @@ default baudrate is 9600. It will need to be set every startup.
     - Get the current baudrate
     - successful [status 200] response application/json {"success": true, "baudRate": number}
     - failed [status 400] response application/json {"success": false, "error": string}
-
 
 ## Pin mapping
 
@@ -112,6 +111,4 @@ class SerialSocket:
 serial = SerialSocket()
 serial.connect('GO-XXXXXXX', 47070)
 serial.write(bytearray("hello\n", "utf-8"))
-
-
 ```

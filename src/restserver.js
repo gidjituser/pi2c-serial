@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const Router = require('koa-router');
 const cors = require('@koa/cors');
+const packageVersion = require('../package.json').version;
 
 //Rs232/Serial parsing
 const isError = function(e) {
@@ -83,6 +84,11 @@ module.exports = class RestServer {
       ctx.body = {
         success: true,
         baudRate: serialport.baudRate
+      }
+    });
+    this.router.get('/api/v1/version', async (ctx, next) => {
+      ctx.body = {
+        version: packageVersion
       }
     });
 
